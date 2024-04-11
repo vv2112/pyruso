@@ -50,12 +50,17 @@ def display_cube(cube):
         print('  ' * 3 + ' ', end='')
         print_cube_line(cube, 5, i)
         print()
-
-
     return 7
 
 
 def print_cube_line(cube, side, line):
     for ii in range(3):
         print(cube[side * 9 + line * 3 + ii] + ' ', end='')
+        # printbox(cube[side * 9 + line * 3 + ii])
 
+
+# Попытка сделать эмодзи цветные квадратики.. Не получилось.
+# def printbox(color):
+#     if color == "Y":
+#         print("\U0001f7e8")
+    

@@ -25,7 +25,7 @@ class Cube:
         #меняем боковые верхние
         for i in range(3):
             c[9+i], c[18+i], c[27+i], c[36+i] = c[18+i], c[27+i], c[36+i], c[9+i]
-        print(c)
+#        print(c)
         self.cube_as_str = ''.join(c)
 
 #print(Cube.cube_as_str)
