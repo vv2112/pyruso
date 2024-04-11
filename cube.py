@@ -20,8 +20,15 @@ class Cube:
     def U(self):
         c = list(self.cube_as_str)
 
+        #меняем верхнюю плоскать
         c[0], c[1], c[2], c[3], c[5], c[6], c[7], c[8] = c[6], c[3], c[0], c[7], c[1], c[8], c[5], c[2]
+        #меняем боковые верхние
         for i in range(3):
             c[9+i], c[18+i], c[27+i], c[36+i] = c[18+i], c[27+i], c[36+i], c[9+i]
-
+        print(c)
         self.cube_as_str = ''.join(c)
+
+#print(Cube.cube_as_str)
+#результат:
+#YYYYYYYYYBBBBBBBBBRRRRRRRRRGGGGGGGGGOOOOOOOOOWWWWWWWWW
+
